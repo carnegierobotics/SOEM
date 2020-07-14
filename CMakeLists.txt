@@ -63,6 +63,8 @@ file(GLOB OSAL_HEADERS osal/osal.h osal/${OS}/*.h)
 file(GLOB OSHW_HEADERS oshw/${OS}/*.h)
 
 include_directories(${CRL_ETHERCAT_DIR}/include)
+
+include_directories(${SHARED_TECH_COMMON_INCLUDE})
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/soem)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/osal)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/osal/${OS})
